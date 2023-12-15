@@ -1,5 +1,6 @@
 package com.tqz.multithread.transaction.demo.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,8 +24,10 @@ public class Employee {
 
     private Integer id;
 
+    @TableField("employee_name")
     private String employeeName;
 
+    @TableField("create_time")
     private Date createTime;
 
 }
